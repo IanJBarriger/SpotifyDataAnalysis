@@ -6,7 +6,7 @@ This project used a collection of my personal Spotify data dating from February 
 
 **Tech used:** 
 
-* PythoN
+* Python
   - Jupyter Notebook 
   - Pandas
   - Numpy
