@@ -1,0 +1,2971 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2017-2025_Spotify_Data' inline='true' name='federated.0znwge30v0eofx16kf45a1xaftip' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2017-2025_Spotify_Data' name='textscan.1jgsb761gi7wzf1aen2v20u4unuk'>
+            <connection class='textscan' directory='C:/Users/ibarr/OneDrive - University of Central Florida/Computer Science/Data Sources/Spotify Extended Streaming History' filename='2017-2025_Spotify_Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jgsb761gi7wzf1aen2v20u4unuk' name='2017-2025_Spotify_Data.csv' table='[2017-2025_Spotify_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='ts' ordinal='0' />
+            <column datatype='string' name='platform' ordinal='1' />
+            <column datatype='integer' name='ms_played' ordinal='2' />
+            <column datatype='string' name='conn_country' ordinal='3' />
+            <column datatype='string' name='ip_addr' ordinal='4' />
+            <column datatype='string' name='track_name' ordinal='5' />
+            <column datatype='string' name='artist_name' ordinal='6' />
+            <column datatype='string' name='album_name' ordinal='7' />
+            <column datatype='string' name='spotify_track_uri' ordinal='8' />
+            <column datatype='string' name='episode_name' ordinal='9' />
+            <column datatype='string' name='episode_show_name' ordinal='10' />
+            <column datatype='string' name='spotify_episode_uri' ordinal='11' />
+            <column datatype='string' name='audiobook_title' ordinal='12' />
+            <column datatype='string' name='audiobook_uri' ordinal='13' />
+            <column datatype='string' name='audiobook_chapter_uri' ordinal='14' />
+            <column datatype='string' name='audiobook_chapter_title' ordinal='15' />
+            <column datatype='string' name='reason_start' ordinal='16' />
+            <column datatype='string' name='reason_end' ordinal='17' />
+            <column datatype='boolean' name='shuffle' ordinal='18' />
+            <column datatype='boolean' name='skipped' ordinal='19' />
+            <column datatype='boolean' name='offline' ordinal='20' />
+            <column datatype='string' name='offline_timestamp' ordinal='21' />
+            <column datatype='boolean' name='incognito_mode' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ts]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>ts</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[platform]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>platform</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ms_played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ms_played]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>ms_played</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conn_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[conn_country]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>conn_country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ip_addr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ip_addr]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>ip_addr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>track_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[track_name]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>track_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist_name]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>artist_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>album_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[album_name]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>album_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spotify_track_uri</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spotify_track_uri]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>spotify_track_uri</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[episode_name]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>episode_name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_show_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[episode_show_name]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>episode_show_name</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spotify_episode_uri</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spotify_episode_uri]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>spotify_episode_uri</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[audiobook_title]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>audiobook_title</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_uri</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[audiobook_uri]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>audiobook_uri</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_chapter_uri</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[audiobook_chapter_uri]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>audiobook_chapter_uri</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>audiobook_chapter_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[audiobook_chapter_title]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>audiobook_chapter_title</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_start</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason_start]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>reason_start</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_end</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason_end]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>reason_end</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shuffle</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[shuffle]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>shuffle</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skipped</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[skipped]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>skipped</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offline</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[offline]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>offline</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offline_timestamp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[offline_timestamp]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>offline_timestamp</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incognito_mode</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[incognito_mode]</local-name>
+            <parent-name>[2017-2025_Spotify_Data.csv]</parent-name>
+            <remote-alias>incognito_mode</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Seconds Played' datatype='real' name='[Calculation_2025775463414337537]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[ms_played]/1000' />
+      </column>
+      <column caption='Streams' datatype='integer' name='[Calculation_2025775463415668738]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Calculation_2025775463414337537])' />
+      </column>
+      <column caption='Index' datatype='boolean' name='[Calculation_2025775463429283843]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='index()&lt;=10'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Ts (copy)' datatype='datetime' default-format='*hh:nn AMPM' name='[Ts (copy)_2025775463434330116]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[ts]' />
+      </column>
+      <column caption='2017-2025_Spotify_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]' role='measure' type='quantitative' />
+      <column caption='Album Name' datatype='string' name='[album_name]' role='dimension' type='nominal' />
+      <column caption='Artist Name' datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+      <column caption='Audiobook Chapter Title' datatype='string' name='[audiobook_chapter_title]' role='dimension' type='nominal' />
+      <column caption='Audiobook Chapter Uri' datatype='string' name='[audiobook_chapter_uri]' role='dimension' type='nominal' />
+      <column caption='Audiobook Title' datatype='string' name='[audiobook_title]' role='dimension' type='nominal' />
+      <column caption='Audiobook Uri' datatype='string' name='[audiobook_uri]' role='dimension' type='nominal' />
+      <column caption='Conn Country' datatype='string' name='[conn_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Episode Name' datatype='string' name='[episode_name]' role='dimension' type='nominal' />
+      <column caption='Episode Show Name' datatype='string' name='[episode_show_name]' role='dimension' type='nominal' />
+      <column caption='Incognito Mode' datatype='boolean' name='[incognito_mode]' role='dimension' type='nominal' />
+      <column caption='Ip Addr' datatype='string' name='[ip_addr]' role='dimension' type='nominal' />
+      <column caption='Ms Played' datatype='integer' name='[ms_played]' role='measure' type='quantitative' />
+      <column caption='Offline' datatype='boolean' name='[offline]' role='dimension' type='nominal' />
+      <column caption='Offline Timestamp' datatype='string' name='[offline_timestamp]' role='dimension' type='nominal' />
+      <column caption='Platform' datatype='string' name='[platform]' role='dimension' type='nominal' />
+      <column caption='Reason End' datatype='string' name='[reason_end]' role='dimension' type='nominal' />
+      <column caption='Reason Start' datatype='string' name='[reason_start]' role='dimension' type='nominal' />
+      <column caption='Shuffle' datatype='boolean' name='[shuffle]' role='dimension' type='nominal' />
+      <column caption='Skipped' datatype='boolean' name='[skipped]' role='dimension' type='nominal' />
+      <column caption='Spotify Episode Uri' datatype='string' name='[spotify_episode_uri]' role='dimension' type='nominal' />
+      <column caption='Spotify Track Uri' datatype='string' name='[spotify_track_uri]' role='dimension' type='nominal' />
+      <column caption='Track Name' datatype='string' name='[track_name]' role='dimension' type='nominal' />
+      <column caption='Ts' datatype='datetime' name='[ts]' role='dimension' type='ordinal' />
+      <column-instance column='[ts]' derivation='Day' name='[dy:ts:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[ts]' derivation='Hour' name='[hr:ts:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[artist_name]' derivation='None' name='[none:artist_name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ts]' derivation='Weekday' name='[wd:ts:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[ts]' derivation='Week' name='[wk:ts:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[ts]' derivation='Year' name='[yr:ts:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (HOUR(Ts))' hidden='true' name='[Action (HOUR(Ts))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[hr:ts:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Track Name)' hidden='true' name='[Action (Track Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[track_name]' />
+        </groupfilter>
+      </group>
+      <group caption='Artist' name='[Artist Name Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter expression='[Calculation_2025775463415668738] &gt; 1750' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+          <groupfilter function='level-members' level='[artist_name]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ibarr/AppData/Local/Temp/TableauTemp/#TableauTemp_0x7bomt0hd4jfj1708ogb027qut1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/11/2025 10:11:48 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ts</remote-alias>
+              <ordinal>0</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>67665</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>platform</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[platform]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>platform</remote-alias>
+              <ordinal>1</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ms_played</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ms_played]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ms_played</remote-alias>
+              <ordinal>2</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5828</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conn_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[conn_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conn_country</remote-alias>
+              <ordinal>3</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ip_addr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ip_addr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ip_addr</remote-alias>
+              <ordinal>4</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>track_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[track_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>track_name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1973</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>artist_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[artist_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>artist_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>700</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>album_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[album_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>album_name</remote-alias>
+              <ordinal>7</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1256</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spotify_track_uri</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spotify_track_uri]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>spotify_track_uri</remote-alias>
+              <ordinal>8</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2304</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>episode_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[episode_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>episode_name</remote-alias>
+              <ordinal>9</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>166</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>episode_show_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[episode_show_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>episode_show_name</remote-alias>
+              <ordinal>10</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spotify_episode_uri</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spotify_episode_uri]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>spotify_episode_uri</remote-alias>
+              <ordinal>11</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>166</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>audiobook_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[audiobook_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>audiobook_title</remote-alias>
+              <ordinal>12</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>audiobook_uri</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[audiobook_uri]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>audiobook_uri</remote-alias>
+              <ordinal>13</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>audiobook_chapter_uri</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[audiobook_chapter_uri]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>audiobook_chapter_uri</remote-alias>
+              <ordinal>14</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>audiobook_chapter_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[audiobook_chapter_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>audiobook_chapter_title</remote-alias>
+              <ordinal>15</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason_start</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason_start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason_start</remote-alias>
+              <ordinal>16</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason_end</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason_end]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason_end</remote-alias>
+              <ordinal>17</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shuffle</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[shuffle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shuffle</remote-alias>
+              <ordinal>18</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>skipped</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[skipped]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>skipped</remote-alias>
+              <ordinal>19</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>offline</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[offline]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>offline</remote-alias>
+              <ordinal>20</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>offline_timestamp</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[offline_timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>offline_timestamp</remote-alias>
+              <ordinal>21</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54664</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incognito_mode</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[incognito_mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>incognito_mode</remote-alias>
+              <ordinal>22</ordinal>
+              <family>2017-2025_Spotify_Data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:artist_name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A$AP Rocky&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Barely Legal&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Chef&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Duran Duran&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GROUPLOVE&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kali Uchis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lil Kapow&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mike Posner&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Polo G&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Roderick Porter&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tears For Fears&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;tobi lou&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Yung Bae&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;21 Savage&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aries&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Boldy James&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;DJ Luian&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Future&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JAY-Z&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Knxwledge&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mark Ronson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Paycheck&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rex Orange County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Steve Lacy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Rolling Stones&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Wilbur Soot&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;347aidan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BABY GRAVY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bryson Tiller&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Domo Genesis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Frank Ocean&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Giveon&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Joji&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;KYLE&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Metro Boomin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pink Guy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ritt Momney&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Suzanne Vega&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Thundercat&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;YNW Melly&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Drake&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Adot&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Benny The Butcher&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;d4vd&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Eminem&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Hozier&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;KAYTRAMINÉ&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lil Wayne&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mustard&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pusha T&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ScHoolboy Q&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Beach Boys&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tory Lanez&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;低的&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Aaron May&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;bbno$&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Chris Stapleton&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Eagles&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Healy&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kate Bush&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lil Mosey&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;minty&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Post Malone&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rupert Holmes&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Teedra Moses&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TOKYO’S REVENGE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yung Senju&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;420 Unlovable&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BabyJake&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Calvin Harris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Don McLean&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Glass Animals&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JPEGMAFIA&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lary Over&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MF DOOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;PinkPantheress&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ROA&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SZA&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tiësto&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Young Ratoo&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Tyler, The Creator&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AnnenMayKantereit&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Blue Öyster Cult&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dbangz&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Freddie Dredd&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jan Blakeee&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;KIDS SEE GHOSTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Madonna&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Outkast&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;redveil&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sonder&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Philly Specials&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Verzache&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;24kGoldn&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Arizona Zervas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BROCKHAMPTON&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Djo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;GEE LEE&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;JID&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kodak Black&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Marlon Funaki&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Peachy!&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rich Brian&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Stevie Nicks&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Weeknd&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;WILLOW&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Aminé&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Biskwiq&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Daryl Hall &amp; John Oates&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fleetwood Mac&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jack Harlow&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kendrick Lamar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;khai dreams&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Looking Glass&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Odd Future&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Red Hot Chili Peppers&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ski Mask The Slump God&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Kid LAROI&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tyler Childers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;¥$&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bakar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Carl Pedida&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Don Toliver&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Gold Revere&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;jschlatt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Laufey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Michael Jackson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Pitbull&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rod Stewart&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tame Impala&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tim McGraw&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Young Thug&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AJR&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Big Sean&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DaBaby&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Estelle&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;iann dior&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;KAYTRANADA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lil Yachty&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neon Trees&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;QUEEF JERKY&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shania Twain&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Doobie Brothers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Trippie Redd&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Yung Gravy&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Alan Jackson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Billie Eilish&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Daft Punk&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fergie&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;iDubbbz&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kelmitt&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Logan Boden&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;NLE Choppa&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Queen&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sidemen&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Game&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Twista&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Anderson .Paak&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;blackbear&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;David Bowie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Frankie Valli &amp; The Four Seasons&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jaden&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Khalid&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MadeinTYO&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Olivia Rodrigo&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Redbone&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Smino&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Notorious B.I.G.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Van Morrison&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ariana Grande&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Blue Swede&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dexys Midnight Runners&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Freddie Gibbs&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;JaWill&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Knucks&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Manny Pinkins&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PARTYNEXTDOOR&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Remers&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Soulja Boy&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Police&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Westside Gunn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;ABBA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;beabadoobee&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Childish Gambino&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Coldplay&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Earth, Wind &amp; Fire&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hobo Johnson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Katrina &amp; The Waves&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lil Nas X&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ms. Lauryn Hill&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;praise.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Saba&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Alchemist&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tom Petty&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Zach Bryan&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Kanye West&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A$AP Ferg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bankrol Hayden&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Carly Simon&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dreamville&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GoldLink&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Juice WRLD&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lil Baby&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Miguel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Playboi Carti&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Roddy Ricch&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Taylor Swift&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tiny Meat Gang&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;YoungBoy Never Broke Again&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;50 Cent&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Armani White&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brent Faiyaz&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bruce Springsteen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Doja Cat&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;George Strait&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Joey Bada$$&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kodoku&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marvin Gaye&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pharrell Williams&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rick Springfield&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Still Woozy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Wombats&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wiz Khalifa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alicia Keys&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Billy Joel&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Daniel Caesar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fivio Foreign&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Isaiah Rashad&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kenny Rogers&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Logic&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Noah Kahan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rauw Alejandro&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sista Prod&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Internet&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tyga&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AC/DC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bee Gees&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Counting Crows&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Elton John&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hotel Ugly&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Katy Perry&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lil Uzi Vert&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mura Masa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Prince&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sainté&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Backseat Lovers&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tommy Richman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Zack Fox&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Mac Miller&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;88rising&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Baby Bash&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bruno Mars&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dominic Fike&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;gianni &amp; kyle&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Joey Valence &amp; Brae&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kota the Friend&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Meek Mill&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Phil Collins&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Rico Nasty&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Surfaces&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Thee Sacred Souls&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;XXXTENTACION&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:ts:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2021</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[dy:ts:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2021</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[wd:ts:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[wk:ts:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[hr:ts:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2023</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='2017-2025_Spotify_Data.csv' id='2017-2025_Spotify_Data.csv_75A8BA77DC5543E0830A1D730E40BABC'>
+            <properties context=''>
+              <relation connection='textscan.1jgsb761gi7wzf1aen2v20u4unuk' name='2017-2025_Spotify_Data.csv' table='[2017-2025_Spotify_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='ts' ordinal='0' />
+                  <column datatype='string' name='platform' ordinal='1' />
+                  <column datatype='integer' name='ms_played' ordinal='2' />
+                  <column datatype='string' name='conn_country' ordinal='3' />
+                  <column datatype='string' name='ip_addr' ordinal='4' />
+                  <column datatype='string' name='track_name' ordinal='5' />
+                  <column datatype='string' name='artist_name' ordinal='6' />
+                  <column datatype='string' name='album_name' ordinal='7' />
+                  <column datatype='string' name='spotify_track_uri' ordinal='8' />
+                  <column datatype='string' name='episode_name' ordinal='9' />
+                  <column datatype='string' name='episode_show_name' ordinal='10' />
+                  <column datatype='string' name='spotify_episode_uri' ordinal='11' />
+                  <column datatype='string' name='audiobook_title' ordinal='12' />
+                  <column datatype='string' name='audiobook_uri' ordinal='13' />
+                  <column datatype='string' name='audiobook_chapter_uri' ordinal='14' />
+                  <column datatype='string' name='audiobook_chapter_title' ordinal='15' />
+                  <column datatype='string' name='reason_start' ordinal='16' />
+                  <column datatype='string' name='reason_end' ordinal='17' />
+                  <column datatype='boolean' name='shuffle' ordinal='18' />
+                  <column datatype='boolean' name='skipped' ordinal='19' />
+                  <column datatype='boolean' name='offline' ordinal='20' />
+                  <column datatype='string' name='offline_timestamp' ordinal='21' />
+                  <column datatype='boolean' name='incognito_mode' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0znwge30v0eofx16kf45a1xaftip'>
+      <datasources>
+        <datasource caption='2017-2025_Spotify_Data' name='federated.0znwge30v0eofx16kf45a1xaftip' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0znwge30v0eofx16kf45a1xaftip'>
+        <column caption='Seconds Played' datatype='real' name='[Calculation_2025775463414337537]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='[ms_played]/1000' />
+        </column>
+        <column caption='Streams' datatype='integer' name='[Calculation_2025775463415668738]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNT([Calculation_2025775463414337537])' />
+        </column>
+        <column caption='Ms Played' datatype='integer' name='[ms_played]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]'>
+        <groupfilter function='level-members' level='[artist_name]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_52B38E1448B04B04AD4A0D4266CF8228]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Streams by Hour' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_BE180E985C5B4AD386E8BCC05AFC8AE2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Top Songs by Artist' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{591B7C9E-4B40-49AD-BF2D-142AD30561DB}' />
+    </worksheet>
+    <worksheet name='Streams Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1ed760'>Streams by Week</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2017-2025_Spotify_Data' name='federated.0znwge30v0eofx16kf45a1xaftip' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znwge30v0eofx16kf45a1xaftip'>
+            <column caption='Seconds Played' datatype='real' name='[Calculation_2025775463414337537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[ms_played]/1000' />
+            </column>
+            <column caption='Streams' datatype='integer' name='[Calculation_2025775463415668738]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Calculation_2025775463414337537])' />
+            </column>
+            <column caption='Artist Name' datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[ts]' derivation='Hour' name='[hr:ts:ok]' pivot='key' type='ordinal' />
+            <column caption='Ms Played' datatype='integer' name='[ms_played]' role='measure' type='quantitative' />
+            <column-instance column='[ts]' derivation='Month-Trunc' name='[tmn:ts:qk]' pivot='key' type='quantitative' />
+            <column caption='Track Name' datatype='string' name='[track_name]' role='dimension' type='nominal' />
+            <column caption='Ts' datatype='datetime' name='[ts]' role='dimension' type='ordinal' />
+            <column-instance column='[ts]' derivation='Week-Trunc' name='[twk:ts:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_2025775463415668738]' derivation='User' name='[usr:Calculation_2025775463415668738:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[Action (HOUR(Ts))]'>
+            <groupfilter function='level-members' level='[hr:ts:ok]' user:ui-action-filter='[Action1_52B38E1448B04B04AD4A0D4266CF8228]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[Action (Track Name)]'>
+            <groupfilter function='level-members' level='[track_name]' user:ui-action-filter='[Action2_BE180E985C5B4AD386E8BCC05AFC8AE2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[twk:ts:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[twk:ts:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[twk:ts:ok]' member='#2017-01-01 00:00:00#' />
+                <groupfilter function='member' level='[twk:ts:ok]' member='#2020-11-01 00:00:00#' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[twk:ts:ok]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Action (HOUR(Ts))]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Action (Track Name)]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' scope='rows' value='Number of Streams' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='tick-color' scope='cols' value='#ffffff' />
+            <format attr='tick-color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' value='#ffffff' />
+            <format attr='title' class='0' field='[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]' field-type='quantitative' major-origin='#2023-01-01 12:00:00#' major-spacing='1' major-units='years' minor-origin='#2023-01-01 12:00:00#' minor-spacing='1' minor-units='months' scope='cols' type='space' />
+            <format attr='height' field='[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]' value='33' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='background-color' scope='rows' value='#000000' />
+            <format attr='background-color' scope='cols' value='#000000' />
+            <format attr='background-color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' value='#000000' />
+            <format attr='background-color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' value='#ffffff' />
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d9eee1</color>
+                <color>#c3ebd1</color>
+                <color>#ade9c2</color>
+                <color>#97e6b3</color>
+                <color>#81e4a4</color>
+                <color>#6de196</color>
+                <color>#58de88</color>
+                <color>#44dc7a</color>
+                <color>#31d96d</color>
+                <color>#1ed760</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' id='refline0' value='#1ed7604b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#1ed760' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#1ed760' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]</rows>
+        <cols>[federated.0znwge30v0eofx16kf45a1xaftip].[tmn:ts:qk]</cols>
+      </table>
+      <simple-id uuid='{EF941EF6-6398-4C38-9E18-4C91FD61C7A3}' />
+    </worksheet>
+    <worksheet name='Streams by Hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1ed760'>Streams By Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2017-2025_Spotify_Data' name='federated.0znwge30v0eofx16kf45a1xaftip' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znwge30v0eofx16kf45a1xaftip'>
+            <column caption='Seconds Played' datatype='real' name='[Calculation_2025775463414337537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[ms_played]/1000' />
+            </column>
+            <column caption='Streams' datatype='integer' name='[Calculation_2025775463415668738]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Calculation_2025775463414337537])' />
+            </column>
+            <column caption='Artist Name' datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[ts]' derivation='Hour' name='[hr:ts:ok]' pivot='key' type='ordinal' />
+            <column caption='Ms Played' datatype='integer' name='[ms_played]' role='measure' type='quantitative' />
+            <column caption='Track Name' datatype='string' name='[track_name]' role='dimension' type='nominal' />
+            <column caption='Ts' datatype='datetime' name='[ts]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2025775463415668738]' derivation='User' name='[usr:Calculation_2025775463415668738:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[Action (Track Name)]'>
+            <groupfilter function='level-members' level='[track_name]' user:ui-action-filter='[Action2_BE180E985C5B4AD386E8BCC05AFC8AE2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Action (Track Name)]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0znwge30v0eofx16kf45a1xaftip].[hr:ts:ok]' value='-90' />
+            <format attr='text-format' field='[federated.0znwge30v0eofx16kf45a1xaftip].[hr:ts:ok]' value='ih a' />
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[hr:ts:ok]' value='#ffffff' />
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#f2f2f244' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' value='#ffffff' />
+            <format attr='title' field='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' value='Top 10 Artists'>
+              <formatted-text>
+                <run>Top 10 Artists</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' value='center' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' value='11' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' value='#1ed760' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#1ed760' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]</rows>
+        <cols>[federated.0znwge30v0eofx16kf45a1xaftip].[hr:ts:ok]</cols>
+      </table>
+      <simple-id uuid='{5BAE4A5C-DD78-4ACC-94E4-6055FEA6D809}' />
+    </worksheet>
+    <worksheet name='Top Songs by Artist'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1ed760'>Top 10 Songs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2017-2025_Spotify_Data' name='federated.0znwge30v0eofx16kf45a1xaftip' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0znwge30v0eofx16kf45a1xaftip'>
+            <column caption='Seconds Played' datatype='real' name='[Calculation_2025775463414337537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[ms_played]/1000' />
+            </column>
+            <column caption='Streams' datatype='integer' name='[Calculation_2025775463415668738]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Calculation_2025775463414337537])' />
+            </column>
+            <column caption='Index' datatype='boolean' name='[Calculation_2025775463429283843]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='index()&lt;=10'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Artist Name' datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[ts]' derivation='Hour' name='[hr:ts:ok]' pivot='key' type='ordinal' />
+            <column caption='Ms Played' datatype='integer' name='[ms_played]' role='measure' type='quantitative' />
+            <column-instance column='[track_name]' derivation='None' name='[none:track_name:nk]' pivot='key' type='nominal' />
+            <column caption='Track Name' datatype='string' name='[track_name]' role='dimension' type='nominal' />
+            <column caption='Ts' datatype='datetime' name='[ts]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2025775463415668738]' derivation='User' name='[usr:Calculation_2025775463415668738:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2025775463429283843]' derivation='User' name='[usr:Calculation_2025775463429283843:nk:3]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[Action (HOUR(Ts))]'>
+            <groupfilter function='level-members' level='[hr:ts:ok]' user:ui-action-filter='[Action1_52B38E1448B04B04AD4A0D4266CF8228]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>549</max>
+          </filter>
+          <filter class='categorical' column='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463429283843:nk:3]'>
+            <groupfilter function='member' level='[usr:Calculation_2025775463429283843:nk:3]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0znwge30v0eofx16kf45a1xaftip].[none:track_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463429283843:nk:3]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Action (HOUR(Ts))]</column>
+            <column>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[none:track_name:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[none:track_name:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d9eee1</color>
+                <color>#c3ebd1</color>
+                <color>#ade9c2</color>
+                <color>#97e6b3</color>
+                <color>#81e4a4</color>
+                <color>#6de196</color>
+                <color>#58de88</color>
+                <color>#44dc7a</color>
+                <color>#31d96d</color>
+                <color>#1ed760</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#f2f2f2' />
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#1ed760' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0znwge30v0eofx16kf45a1xaftip].[none:track_name:nk]</rows>
+        <cols>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]</cols>
+      </table>
+      <simple-id uuid='{046D0A0A-0B99-4ABA-B4B3-60624A77ED3E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='1060' maxwidth='1720' minheight='1060' minwidth='1720' sizing-mode='range' />
+      <datasources>
+        <datasource caption='2017-2025_Spotify_Data' name='federated.0znwge30v0eofx16kf45a1xaftip' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0znwge30v0eofx16kf45a1xaftip' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98490' id='7' param='horz' type-v2='layout-flow' w='99070' x='465' y='755'>
+            <zone fixed-size='461' h='98490' id='13' is-fixed='true' type-v2='layout-basic' w='99070' x='465' y='755'>
+              <zone h='98490' id='16' type-v2='empty' w='99070' x='465' y='755'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='16887' id='17' is-centered='0' is-scaled='1' param='C:/Users/ibarr/Downloads/Untitled.png' type-v2='bitmap' w='16395' x='5291' y='9717' />
+        <zone h='10000' id='9' name='Streams Over Time' pane-specification-id='0' param='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' type-v2='color' w='12733' x='9884' y='23396' />
+        <zone h='48302' id='10' name='Streams by Hour' w='54360' x='45640' y='51698'>
+          <layout-cache cell-count-w='24' minheight='183' non-cell-size-w='59' type-h='scalable' type-w='cell' />
+        </zone>
+        <zone h='47925' id='12' name='Top Songs by Artist' w='46047' x='-291' y='51509' />
+        <zone h='50660' id='3' name='Streams Over Time' w='74360' x='25523' y='1226' />
+        <zone forceUpdate='true' h='10377' id='15' type-v2='text' w='23198' x='1977' y='849'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1ed760' fontname='Tableau Bold' fontsize='28'>My Top 10 Artists (Feb. 2020- Jan. 2025)</run>
+          </formatted-text>
+        </zone>
+        <zone fixed-size='238' h='23019' id='11' is-fixed='true' mode='radiolist' name='Streams by Hour' param='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' type-v2='filter' w='24186' x='1221' y='27453' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98490' id='18' param='vert' type-v2='layout-flow' w='99070' x='465' y='755'>
+                <zone forceUpdate='true' h='10377' id='15' type-v2='text' w='23198' x='1977' y='849'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#1ed760' fontname='Tableau Bold' fontsize='28'>My Top 10 Artists (Feb. 2020- Jan. 2025)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50660' id='3' is-fixed='true' name='Streams Over Time' w='74360' x='25523' y='1226'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10000' id='9' name='Streams Over Time' pane-specification-id='0' param='[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]' type-v2='color' w='12733' x='9884' y='23396'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='179' h='16887' id='17' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ibarr/Downloads/Untitled.png' type-v2='bitmap' w='16395' x='5291' y='9717'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47925' id='12' is-fixed='true' name='Top Songs by Artist' w='46047' x='-291' y='51509'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='238' h='23019' id='11' mode='dropdown' name='Streams by Hour' param='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' type-v2='filter' w='24186' x='1221' y='27453'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48302' id='10' is-fixed='true' name='Streams by Hour' w='54360' x='45640' y='51698'>
+                  <layout-cache cell-count-w='24' minheight='183' non-cell-size-w='59' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7FD04C18-89F8-4764-B7C7-AF3158D8EE7B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Streams Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[none:album_name:nk]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[none:artist_name:nk]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[qr:ts:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[sum:Calculation_2025775463411490816:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[sum:Calculation_2025775463411490816:qk]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[tyr:ts:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[yr:ts:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F583E292-7E86-4012-9CC1-3721894961DB}' />
+    </window>
+    <window class='worksheet' name='Streams by Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[attr:ts:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[none:artist_name:nk]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463415668738:qk]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[wd:ts:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[yr:ts:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5DE2BABC-0F6A-4910-9680-0D69003486E8}' />
+    </window>
+    <window class='worksheet' name='Top Songs by Artist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[none:track_name:nk]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463429283843:nk:3]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[usr:Calculation_2025775463429283843:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{42D51935-1888-4B08-900D-D0D9C2E145A2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Streams Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Streams by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Songs by Artist'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{90A12C17-38C4-46CF-AE95-042CABB4D47E}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[Artist Name Set]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[mn:ts:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[yr:Ts (copy)_2025775463434330116:ok]</field>
+            <field>[federated.0znwge30v0eofx16kf45a1xaftip].[yr:ts:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0E4BEDB4-0796-4A93-AF1D-77E82C888467}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Streams Over Time' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Streams by Hour' width='192'>
+      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
+      5sIlH1O1MgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Top Songs by Artist' width='192'>
+      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
+      /wCB6V4jlOiznQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
