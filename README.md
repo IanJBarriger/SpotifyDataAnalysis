@@ -6,9 +6,9 @@ This project used a collection of my personal Spotify data dating from February 
 
 **Tech used:** 
 -Python
---Jupyter Notebook
---Pandas
---Numpy
+  -Jupyter Notebook
+  -Pandas
+  -Numpy
 -Tableau
 
 ## Lessons Learned:
