@@ -5,15 +5,13 @@ This project used a collection of my personal Spotify data dating from February 
 ## How It's Made:
 
 **Tech used:** 
--Python
 
-  -Jupyter Notebook
-  
+*Python
+  -Jupyter Notebook 
   -Pandas
-  
   -Numpy
   
--Tableau
+*Tableau
 
 ## Lessons Learned:
 
